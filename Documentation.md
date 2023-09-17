@@ -43,6 +43,21 @@ Overall, this code appears to be an attempt to perform quantum multiplication, b
 
 **Quantum Algorithm**
 
+**Unit Testing**
+**(1)** Import the unittest library to our environment
+
+**(2)** Defined a function called test_multiplication(). This function has three parts: Set up, Act, and Assert. First, the setup of this function means that we will input a multiplier and a multiplicand, as well as their expected result. Second, we act by multiplying the multiplier and the multiplicand together using our quantum multiplication function, quantum_multiplication(), and we store the result. Finally, we use the assertEqual() function in order to check if our expected product matches the result provided by our quantum_mutiplication() function. If they both match, then our code is working fine and you get no output message. If they do not match then you get an error message that you can customize.
+
+The test_multiplication() function only works when you are multiplying two positive integers.
+
+**(3)** Define a function called test_negative_multtiplication(). This works exactly as the test_multiplication() function, except it only tests for multiplying two negative integers.
+
+**(3)** Define a function called test_mixed_multtiplication(). This works exactly as the test_multiplication() function, except it only tests for multiplying a negative and a positive integer.
+
+**(3)** Define a function called test_large_integer_multtiplication(). This works exactly as the test_multiplication() function, except it only tests for multiplying two positive integers at least one of which is big.
+
+
+
 
 
 
